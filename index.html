@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO(you): Make whatever changes needed to complete the assignment! -->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-56x56.png" sizes="56x56" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <!--  -->
+</head>
+
+<body>
+  <!--
+
+    ******************************************
+    DO NOT TRANSCRIBE THE ARTICLE YOURSELF!!!!
+    ******************************************
+
+    You do not have to type in all of the text on the page!
+
+    The contents of the article is in `index-content.txt`, which is
+    included in this directory. Copy and paste the contents of that file into
+    this HTML file as needed. You should only need to add HTML to markup the
+    content.
+
+  -->
+
+  <article>
+    <!--Screen 5-->
+    <section id="quiz-name" class="grid">
+      <header>
+        <div id="course-name">
+          <h3>WPR</h3>
+        </div>
+        <div class="stack-circle">
+          <span>M</span>
+          <span>E</span>
+          <span>R</span>
+          <span>N</span>
+        </div>
+      </header>
+
+      <div class="quiz-banner">
+        <div class="quiz-banner-text">
+          <h1>HTML Quiz</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="introduction" class="grid">
+      <div id="author">
+        <p>By Tien Vu</p>
+      </div>
+      <h2>The Test</h2>
+      <p>The test contains 50 questions and there is no time limit.</p>
+      <p>The test is not official, it's just a nice way to see how much you know, or don't know, about HTML.</p>
+      <h2>Count Your Score</h2>
+      <p>You will get 5 point for each correct answer. At the end of the Quiz, your total score will be displayed.
+        Maximum score is 50 points.</p>
+
+      <div id="box-start">
+        <h2>Start the quiz</h2>
+        <p>Good luck!</p>
+        <button id="btn-start">Start the HTML quiz ❯</button>
+      </div>
+    </section>
+
+    <section id="attempt-quiz" class="grid hidden">
+      <div id="attempt"></div>
+      <div id="box-submit">
+        <div id="btn-submit">
+          <button>Submit your answers ❯</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="review-quiz" class="grid hidden">
+
+      <div id="review">
+
+        <div class="question">
+          <!--  -->
+          <div class="question-index">
+            <h2>Question 1 of 10</h2>
+          </div>
+          <div class="question-text">
+            <p>question 1</p>
+          </div>
+          <div class="option option-correct">
+            <input type="radio" name="q1" disabled>
+            <label class="ques grid">
+              option 1
+            </label>
+            <p class="label-ans">Correct answer</p>
+          </div>
+          <div class="option">
+            <input type="radio" name="q1" checked disabled>
+            <label class="ques grid wrong-answer">
+              option 2
+            </label>
+            <p class="label-ans">Your answer</p>
+          </div>
+          <div class="option">
+            <input type="radio" name="q1" disabled>
+            <label class="ques grid"> 
+              option 3
+            </label>
+          </div>
+          <div class="option">
+            <input type="radio" name="q1" disabled>
+            <label class="ques grid">
+              option 4
+            </label>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="box grid" id="box-result">
+        <h2 class="box-title">Result:</h2>  
+        <p class="score">2/10</p>
+        <p class="score-percent">20%</p>
+        <p class="advice">Practice more to improve it :D</p>
+        <button id="btn-try-again">Try again</button>
+      </div>
+    </section>
+  </article>
+</body>
+
+</html>
